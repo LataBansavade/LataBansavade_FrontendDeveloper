@@ -59,7 +59,7 @@ export default function Hero() {
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
-            } md:block bg-[#0C2B2FB2] fixed left-1/4 top-5 bg-opacity-5 px-8 py-4 rounded-full backdrop-blur-md border border-[#B0FAFFB2] shadow-md`}
+            } md:block bg-[#0C2B2FB2] fixed left-1/3 top-5 bg-opacity-5 px-8 py-4 rounded-full backdrop-blur-md border border-[#B0FAFFB2] shadow-md`}
           >
             <ul className="flex gap-10 sm:gap-14 text-md text-[#B0FAFFB2]">
               <li>
