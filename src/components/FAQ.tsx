@@ -21,32 +21,36 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <div className=" text-white min-h-screen flex justify-around items-center p-20">
-      <h2 className="text-6xl font-semibold mb-8">Frequently Asked Questions</h2>
-      <div className="space-y-4 max-w-3xl w-full">
-        {faqData.map((item, index) => (
-          <div
-            key={index}
-            className="bg-[#0A1929] p-4 rounded-lg shadow-md transition-all"
-          >
+    <div className="text-white min-h-screen flex justify-center items-center px-4 py-20 sm:py-24">
+      <div className="w-full max-w-3xl">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-center mb-8">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          {faqData.map((item, index) => (
             <div
-              className="flex justify-between items-center cursor-pointer"
-              onClick={() => toggleFAQ(index)}
+              key={index}
+              className="bg-[#0A1929] p-6 sm:p-8 rounded-lg shadow-md transition-all"
             >
-              <h3 className="text-lg font-medium">{item.question}</h3>
-              <span
-                className={`text-cyan-400 font-bold text-2xl transition-transform ${
-                  activeIndex === index ? "rotate-45" : "rotate-0"
-                }`}
+              <div
+                className="flex justify-between items-center cursor-pointer"
+                onClick={() => toggleFAQ(index)}
               >
-                +
-              </span>
+                <h3 className="text-sm sm:text-lg md:text-xl font-medium">{item.question}</h3>
+                <span
+                  className={`text-cyan-400 font-bold text-xl sm:text-2xl md:text-3xl transition-transform ${
+                    activeIndex === index ? "rotate-45" : "rotate-0"
+                  }`}
+                >
+                  +
+                </span>
+              </div>
+              {activeIndex === index && (
+                <p className="mt-4 text-gray-400 text-sm sm:text-base md:text-lg">{item.answer}</p>
+              )}
             </div>
-            {activeIndex === index && (
-              <p className="mt-4 text-gray-400">{item.answer}</p>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
