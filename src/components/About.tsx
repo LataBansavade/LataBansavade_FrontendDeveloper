@@ -31,7 +31,7 @@ export default function About() {
   return (
     <div className="py-16 flex items-center justify-center flex-col px-4 sm:px-8 md:px-12 lg:px-16">
       <div className="text-center mb-10">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-8">About EthAi</h2>
+        <h2 id="Why Us" className="text-3xl sm:text-4xl font-bold mb-8">About EthAi</h2>
         <p className="text-[#B0FAFFB2] text-base sm:text-lg mx-auto mb-8 max-w-2xl">
           At EthAi, we’re all about making crypto trading easier and more intuitive. We provide tools that help traders keep up with all new market trends, track top traders’ movements.
         </p>
