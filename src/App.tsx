@@ -1,20 +1,8 @@
-import React from "react";
-import {
-  ArrowRight,
-  BarChart2,
-  Brain,
-  Rocket,
-  HelpCircle,
-  ExternalLink,
-} from "lucide-react";
 import Hero from "./components/Hero";
-import Features from "./components/Features";
 import About from "./components/About";
-import Tokenomics from "./components/Tokenomics";
 import Roadmap from "./components/Roadmap";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-import { NavBar } from "./components/NavBar";
 import GridComponent from "./components/GridComponent";
 import TokenomicsChart from "./components/TokenomicsChart";
 
