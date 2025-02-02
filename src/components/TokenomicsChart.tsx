@@ -43,13 +43,15 @@ const TokenomicsChart: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-col gap-8 p-8 rounded-lg items-center justify-center">
-      <h1 className="text-4xl lg:text-6xl font-semibold text-center lg:text-center w-full">
+    <div className=" flex flex-col lg:flex-col gap-8 p-8 rounded-lg items-center justify-center"
+
+    >
+      <h1 id="Tokinomics" className="text-4xl lg:text-6xl font-semibold text-center lg:text-center w-full">
         Tokenomics
       </h1>
-      <div className="flex flex-col lg:flex-row gap-8 w-full lg:justify-around">
+      <div className="flex flex-col lg:flex-row gap-8 w-full items-center lg:justify-around justify-center ">
         {/* Chart */}
-        <div className="w-full sm:w-96 md:w-96 lg:w-96 xl:w-[24rem] h-[24rem] sm:h-[20rem] md:h-[24rem] lg:h-[24rem] xl:h-[28rem]">
+        <div className="flex items-center justify-center w-full sm:w-96 md:w-96 lg:w-96 xl:w-[24rem] h-[24rem] sm:h-[20rem] md:h-[24rem] lg:h-[24rem] xl:h-[28rem]">
           <Doughnut data={data} options={options} />
         </div>
 
