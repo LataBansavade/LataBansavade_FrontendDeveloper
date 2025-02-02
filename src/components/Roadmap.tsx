@@ -24,7 +24,7 @@ export default function Roadmap() {
         "Partnering with Key Players",
         "Global Marketing Campaign",
       ],
-      image: roadmap3,
+      image: roadmap1,
     },
     {
       phase: "Phase 3",
@@ -35,13 +35,13 @@ export default function Roadmap() {
         "Innovating for Sustainability",
         "Fostering Community Growth",
       ],
-      image: roadmap3,
+      image: roadmap1,
     },
   ];
 
   return (
-    <div className="py-16 bg-[#010F14] text-white">
-      <h2 className="text-4xl md:text-6xl font-bold mb-16 text-center">Roadmap</h2>
+    <div className="py-16  text-white">
+      <h2 id="RoadMap" className="text-4xl md:text-6xl font-bold mb-16 text-center">Roadmap</h2>
 
       {/* Roadmap Items */}
       {roadmapData.map((item, index) => (
@@ -72,7 +72,7 @@ export default function Roadmap() {
               className="w-full h-auto rounded-lg"
             />
             {/* Gradient Blur Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black/80 rounded-lg pointer-events-none"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black/80 rounded-lg pointer-events-none"></div> */}
           </div>
         </div>
       ))}
