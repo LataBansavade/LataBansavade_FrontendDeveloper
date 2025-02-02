@@ -24,9 +24,6 @@ export default function Footer() {
               type="text"
               placeholder="What is your work email?"
             />
-            <button className="bg-cyan-500 hover:bg-cyan-600 text-black rounded-2xl px-6 py-2 text-sm md:text-base font-medium shadow-md transition-all">
-              Get Started
-            </button>
           </div>
         </div>
       </div>
