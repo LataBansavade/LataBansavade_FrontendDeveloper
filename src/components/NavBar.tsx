@@ -35,7 +35,7 @@ function NavBar() {
       {/* Desktop Navigation (visible on screens above ~1200px) */}
       <div className="hidden xl:flex items-center gap-8">
         {/* LinksDiv */}
-        <div className="links fixed left-[25vw] w-[50vw] overflow-hidden backdrop-blur-lg bg-white/10 rounded-3xl py-2 px-14 border border-white/10">
+        <div className="flex items-center justify-center links fixed left-[25vw] w-[50vw] overflow-hidden backdrop-blur-lg bg-white/10 rounded-3xl py-2 px-14 border border-white/10">
           <ul
             className="flex relative list-none p-0 m-0"
             onMouseLeave={() => setActiveIndex(-1)}
